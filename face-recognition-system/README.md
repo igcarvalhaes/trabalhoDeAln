@@ -10,7 +10,6 @@ face-recognition-system
 │   ├── train.py          # Contains the training logic for the model
 │   ├── validate.py       # Handles the validation process and accuracy calculation
 │   ├── dataset.py        # Manages loading and preprocessing of datasets
-│   ├── model.py          # Defines the neural network architecture
 │   ├── utils.py          # Contains utility functions for preprocessing and metrics
 │   └── types
 │       └── __init__.py   # Defines custom types or interfaces
@@ -22,6 +21,7 @@ face-recognition-system
 ## Setup Instructions
 
 1. **Clone the repository**:
+
    ```
    git clone <repository-url>
    cd face-recognition-system
@@ -29,6 +29,7 @@ face-recognition-system
 
 2. **Install dependencies**:
    Use the following command to install the required packages:
+
    ```
    pip install -r requirements.txt
    ```
@@ -39,6 +40,7 @@ face-recognition-system
 ## Usage
 
 - To train the model, run:
+
   ```
   python src/train.py
   ```
