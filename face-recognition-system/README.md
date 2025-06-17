@@ -1,63 +1,62 @@
-# Face Recognition System
+# Sistema de Reconhecimento Facial
 
-This project implements a facial recognition system using deep learning techniques. The system is designed to train a neural network model on a dataset of facial images and validate its performance on a separate validation set.
+Este projeto implementa um sistema de reconhecimento facial utilizando técnicas de aprendizado profundo. O sistema foi projetado para treinar um modelo de rede neural em um conjunto de dados de imagens faciais e validar seu desempenho em um conjunto de validação separado.
 
-## Project Structure
+## Estrutura do Projeto
 
 ```
 face-recognition-system
 ├── src
-│   ├── train.py          # Contains the training logic for the model
-│   ├── validate.py       # Handles the validation process and accuracy calculation
-│   ├── dataset.py        # Manages loading and preprocessing of datasets
-│   ├── utils.py          # Contains utility functions for preprocessing and metrics
+│   ├── train.py          # Contém a lógica de treinamento do modelo
+│   ├── validate.py       # Gerencia o processo de validação e cálculo de precisão
+│   ├── dataset.py        # Administra o carregamento e pré-processamento dos conjuntos de dados
 │   └── types
-│       └── __init__.py   # Defines custom types or interfaces
-├── requirements.txt       # Lists project dependencies
-├── README.md              # Documentation for the project
-└── config.yaml            # Configuration settings for paths and parameters
+│       └── __init__.py   # Define tipos ou interfaces personalizadas
+├── requirements.txt       # Lista as dependências do projeto
+├── README.md              # Documentação do projeto
+└── config.yaml            # Configurações para caminhos e parâmetros
 ```
 
-## Setup Instructions
+## Instruções de Configuração
 
-1. **Clone the repository**:
+1. **Clone o repositório**:
 
    ```
    git clone <repository-url>
    cd face-recognition-system
    ```
 
-2. **Install dependencies**:
-   Use the following command to install the required packages:
+2. **Instale as dependências**:
+   Use o seguinte comando para instalar os pacotes necessários:
 
    ```
    pip install -r requirements.txt
    ```
 
-3. **Configure paths**:
-   Update the `config.yaml` file with the correct paths to your training and validation datasets.
+3. **Configure os caminhos**:
+   Atualize o arquivo `config.yaml` com os caminhos corretos para seus conjuntos de dados de treinamento e validação.
 
-## Usage
+## Uso
 
-- To train the model, run:
+- Para treinar o modelo, execute:
 
   ```
   python src/train.py
   ```
 
-- To validate the model, run:
+- Para validar o modelo, execute:
   ```
   python src/validate.py
   ```
 
-## Dataset
+## Conjunto de Dados
 
-The dataset is organized into training and validation folders, with subfolders for different difficulty levels (easy, medium, hard, etc.). Ensure that the dataset is structured as specified in the project.
+O conjunto de dados é organizado em pastas de treinamento e validação, com subpastas para diferentes níveis de dificuldade (fácil, médio, difícil, etc.). Certifique-se de que o conjunto de dados esteja estruturado conforme especificado no projeto.
 
-## Model
+## Modelo
 
-The model architecture is defined in `src/model.py`. You can modify the architecture and training parameters in the `config.yaml` file to experiment with different configurations.
+A arquitetura do modelo é definida em `src/model.py`. Você pode modificar a arquitetura e os parâmetros de treinamento no arquivo `config.yaml` para experimentar diferentes configurações.
 
-## License
+## Licença
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para obter detalhes.
