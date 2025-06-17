@@ -18,7 +18,6 @@ face-recognition-system/
 ├── confusion_matrix.png           # Visualização da matriz de confusão
 ├── classification_report.txt      # Relatório de métricas de classificação
 ├── training_history.png           # Gráfico do histórico de treinamento
-├── config.yaml                    # Arquivo de configuração do projeto
 └── requirements.txt               # Dependências do projeto
 ```
 
@@ -82,7 +81,7 @@ Gerencia a avaliação do modelo treinado:
 
 ## Modelo de Rede Neural
 
-O projeto utiliza uma arquitetura baseada em Redes Neurais Convolucionais (CNN), especificamente:
+O projeto utiliza uma arquitetura baseada em Redes Neurais Convolucionais (CNN), específicamente:
 
 - Camadas convolucionais para extração de características faciais
 - Normalização em lote para estabilidade de treinamento
@@ -115,8 +114,8 @@ O projeto utiliza uma arquitetura baseada em Redes Neurais Convolucionais (CNN),
    - seaborn
    - scikit-learn
 
-3. **Configure os caminhos no arquivo config.yaml**:
-   Atualize os caminhos para os diretórios de treinamento e validação conforme sua configuração local.
+3. **Configure os caminhos no código**:
+   Atualize os caminhos para os diretórios de treinamento e validação nos arquivos `train.py` e `validate.py` conforme sua configuração local.
 
 ## Uso
 
@@ -170,7 +169,7 @@ Para adaptar o projeto para seus próprios dados:
 1. Organize suas imagens seguindo a estrutura de pastas mostrada acima
 2. Ajuste o tamanho das imagens em `dataset.py` se necessário
 3. Modifique a arquitetura do modelo em `train.py` para seus requisitos específicos
-4. Ajuste hiperparâmetros no arquivo `config.yaml`
+4. Ajuste hiperparâmetros diretamente no código-fonte dos arquivos respectivos
 
 ## Créditos
 
@@ -178,4 +177,4 @@ Este projeto é um trabalho para a disciplina Algebra Linear Numérica, ministra
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para obter detalhes.
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE
